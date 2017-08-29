@@ -1,0 +1,31 @@
+# c_design_qt
+unfinished
+
+{
+{1yearNum 1000.0 Jhon 28 20 15 20170301 20170405
+{1rojectNum computerprojme 33.3 5 20170405 20171208 2 personHostPerson 110 1 work
+{personID personName 12 2 computer CS1601 swim write_paper 120 2
+}
+}
+{projectNum aprojectName 2334.3 5 20170701 20171208 2 personHostPerson 110 1 work
+{personID personName 12 2 computer CS1601 swim write_paper 120 2
+}
+}
+{2ojectNum arrojectName 2433.3 5 20170601 20171208 2 personHostPerson 110 1 work
+{personID personName 12 2 computer CS1601 swim write_paper 120 2
+}
+}
+}
+{2yearNum 300.0 HostPerson 28 20 15 20170301 20170405
+{projectNum projectName 233.3 5 20170401 20171208 2 personHostPerson 110 1 work
+{personID personName 12 2 computer CS1601 swim write_paper 120 2
+}
+}
+}
+{3yearNum 1020.0 Tom 28 20 15 20170301 20170405
+{projectNum projectName 233.3 5 20170401 20171208 2 personHostPerson 110 1 work
+{personID personName 12 2 computer CS1601 swim write_paper 120 2
+}
+}
+}
+}
