@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1204</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <column>
+         <property name="text">
+          <string>年度编号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>投入资金( 万元 )</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>负责人</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>申报项目数目</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>实际支持项目数目</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>已结题的项目数目</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>年度计划开始时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>年度计划结束时间</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout" columnstretch="1,1,1,2,2,2,0,0">
+        <item row="1" column="2">
+         <widget class="QPushButton" name="showPersonBtn">
+          <property name="text">
+           <string>ShowPerson</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="showProjectBtn">
+          <property name="text">
+           <string>ShowProject</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="showYearBtn">
+          <property name="text">
+           <string>ShowYear</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="nameLabel">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>此处将显示当前的位置:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="projectLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="yearLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>添加</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>删除</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1204</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>管理(&amp;M)</string>
+    </property>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于(&amp;A)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>查找(&amp;F)</string>
+    </property>
+    <addaction name="actionYearNum"/>
+    <addaction name="actionYearMoney"/>
+    <addaction name="actionYearAct"/>
+    <addaction name="actionProjectNum"/>
+    <addaction name="actionProjectName"/>
+    <addaction name="actionProjectAchiveName"/>
+    <addaction name="actionProjectMoney"/>
+    <addaction name="actionProjectRank"/>
+    <addaction name="actionProjectAchiveType"/>
+    <addaction name="actionPersonName"/>
+    <addaction name="actionPersonMajor"/>
+    <addaction name="actionPersonSkill"/>
+    <addaction name="actionPersonTask"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </action>
+  <action name="actionYearNum">
+   <property name="text">
+    <string>按年度编号查找</string>
+   </property>
+  </action>
+  <action name="actionYearMoney">
+   <property name="text">
+    <string>按照年度资金区间查询</string>
+   </property>
+  </action>
+  <action name="actionYearAct">
+   <property name="text">
+    <string>按照年度支持项目数区间查询</string>
+   </property>
+  </action>
+  <action name="actionProjectNum">
+   <property name="text">
+    <string>按照项目编号查询</string>
+   </property>
+  </action>
+  <action name="actionProjectName">
+   <property name="text">
+    <string>按照项目名称查询</string>
+   </property>
+  </action>
+  <action name="actionProjectAchiveName">
+   <property name="text">
+    <string>按照项目成果查询</string>
+   </property>
+  </action>
+  <action name="actionProjectMoney">
+   <property name="text">
+    <string>按照项目资金区间查询</string>
+   </property>
+  </action>
+  <action name="actionProjectRank">
+   <property name="text">
+    <string>按照项目评级查询</string>
+   </property>
+  </action>
+  <action name="actionProjectAchiveType">
+   <property name="text">
+    <string>按照项目完成类型查询</string>
+   </property>
+  </action>
+  <action name="actionPersonName">
+   <property name="text">
+    <string>按照人员名字查询</string>
+   </property>
+  </action>
+  <action name="actionPersonMajor">
+   <property name="text">
+    <string>按照人员专业查询</string>
+   </property>
+  </action>
+  <action name="actionPersonSkill">
+   <property name="text">
+    <string>按照人员特长查询</string>
+   </property>
+  </action>
+  <action name="actionPersonTask">
+   <property name="text">
+    <string>按照人员任务查询</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
